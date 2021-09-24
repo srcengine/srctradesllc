@@ -1,0 +1,45 @@
+:root{--button_color: darkblue; 
+    --button_color_0: gray; 
+    --hr_color:black;
+--content_border-color:black;}
+    
+.parent_top-menu{display: flex; flex-flow: column;}    
+.parent_top-menu .top-menu button{width: 25%; height: 100%; border-top-left-radius: 10pt; border-top-right-radius: 10pt; align-items: center;}          
+.parent_top-menu button p{transform: rotate(0deg)}
+        
+
+.top-menu{height: 10vh; width: 100vw; display: flex; flex-flow: row}
+      
+.parent_side-menu{display: flex; flex-flow: row; }               
+.parent_side-menu .side-menu button{height: 25%; width: 100%; border-radius: 0;border-top-left-radius: 10pt; border-bottom-left-radius: 10pt; align-items: center; vertical-align: center}       
+        
+.parent_side-menu button p{transform: rotate(270deg)}
+              
+.side-menu{height: 100vh;width: 10vw; display: flex; flex-flow: column; }              
+       
+/*ControLLED element styling*/           
+.collapses{
+        font-weight: bold; 
+        border: 2px solid black; 
+        background-color: var(--button_color_0);
+        color: white;
+        font-size: 1.2rem;} 
+       
+.button_open{background-color: var(--button_color)}
+        
+/*General styling*/    
+body{font-size: 18pt; }
+p{pointer-events: none}
+
+tr{border: 1pt solid black}
+td{text-align: center; border: 1pt solid black}
+th{border: 2pt solid black; text-align: center}
+table { border-collapse: collapse; border: 2pt solid black}
+
+hr {border-top: 2pt solid var(--hr_color); width: 100%; display: inline-block}
+label{font-size: 1.2rem}    
+h1, h2, p, input, label, select{margin: 0rem}
+h2{font-size: 1.2rem}
+.content{border: 2pt solid var(--content_border-color); display: block}
+.closed {display: none}
+
