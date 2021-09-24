@@ -118,7 +118,7 @@ For each element you want controlled, assign it's 'name' with the controller id
         </tr>
     </table>
 
-<select id="l2_select">
+<select id="l2_select" oninput="lumber_tbl_chng('lumber2_area_table', 'l2_select')">
     <option>Delete selected</option>
     <option>Duplicate selected</option>
 </select>
@@ -453,6 +453,8 @@ switch ($x)
 }
     
 document.getElementById("l1_select").selectedIndex  = -1;
+document.getElementById("l2_select").selectedIndex  = -1;
+    
 //assign the events for the buttons to add an item
 document.getElementById('add_lumber1_button').onclick = 
     function() {Wr_calc("1")};  
